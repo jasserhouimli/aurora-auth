@@ -44,6 +44,7 @@ version = "0.1.0"
 dependencies = [
  "axum",
  "chrono",
+ "dotenv",
  "jsonwebtoken",
  "serde",
  "serde_json",
@@ -192,6 +193,12 @@ checksum = "9c9e6a11ca8224451684bc0d7d5a7adbf8f2fd6887261a1cfc3c0432f9d4068e"
 dependencies = [
  "powerfmt",
 ]
+
+[[package]]
+name = "dotenv"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77c90badedccf4105eca100756a0b1289e191f6fcbdadd3cee1d2f614f97da8f"
 
 [[package]]
 name = "fnv"
