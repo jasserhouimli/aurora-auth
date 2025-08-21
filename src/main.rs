@@ -1,4 +1,4 @@
-use axum::{ routing::get, Router };
+use axum::{ Router };
 mod route;
 mod handler;
 mod model;

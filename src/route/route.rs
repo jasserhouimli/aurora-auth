@@ -1,4 +1,4 @@
-use axum::{ http::StatusCode, response::IntoResponse, routing::{ get, post }, Router };
+use axum::{ routing::{ get, post }, Router };
 use crate::handler::{ login_handler, register_handler, secret_handler };
 
 pub fn get_routers() -> Router {
