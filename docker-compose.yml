@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: aurora
+      POSTGRES_USER: aurora_user
+      POSTGRES_PASSWORD: aurora_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data1
+
+volumes:
+  postgres_data:
