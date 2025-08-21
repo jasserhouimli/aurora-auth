@@ -4,9 +4,10 @@ use serde::{ Deserialize, Serialize };
 pub struct LoginResponse {
     pub status: bool,
     pub message: String,
+    pub token: String,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct LoginRequest {
     pub username: String,
     pub password: String,
