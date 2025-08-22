@@ -3,6 +3,8 @@ use std::sync::Arc;
 use jsonwebtoken::{ encode, Header, EncodingKey, DecodingKey, Validation };
 use crate::model::{ Claim };
 
+
+
 pub async fn give_token(claims: Claim, jwt_secret: Arc<String>) -> String {
     let token = encode(
         &Header::default(),
