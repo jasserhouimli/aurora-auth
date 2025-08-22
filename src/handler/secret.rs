@@ -1,7 +1,7 @@
 use axum::{ extract::{ State }, http::StatusCode, response::IntoResponse, Json };
 use axum_extra::extract::TypedHeader;
 use headers::{ Authorization, authorization::Bearer };
-use crate::model::{ AppState };
+use crate::shared::AppState;
 use crate::service::jwt;
 
 pub async fn secret_handler(

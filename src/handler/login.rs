@@ -1,5 +1,6 @@
 use axum::{ extract::State, http::StatusCode, Json };
-use crate::model::{ jsonrep::{ LoginRequest, LoginResponse }, state::AppState };
+use crate::model::{ jsonrep::{ LoginRequest, LoginResponse } };
+use crate::shared::AppState;
 use chrono::{ Utc };
 use crate::model::{ Claim };
 

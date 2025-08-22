@@ -1,5 +1,6 @@
 use axum::{ routing::{ get, post }, Router };
-use crate::{ handler::{ login_handler, register_handler, secret_handler }, model::state::AppState };
+use crate::{ handler::{ login_handler, register_handler, secret_handler } };
+use crate::shared::AppState;
 
 pub fn get_routers() -> Router<AppState> {
     Router::new()
