@@ -1,7 +1,7 @@
 use axum::{ routing::{ get, post }, Router };
-use crate::handler::{ login_handler, register_handler, secret_handler };
+use crate::{ handler::{ login_handler, register_handler, secret_handler }, model::state::AppState };
 
-pub fn get_routers() -> Router {
+pub fn get_routers() -> Router<AppState> {
     Router::new()
         .route("/login", post(login_handler))
         .route("/register", get(register_handler))
