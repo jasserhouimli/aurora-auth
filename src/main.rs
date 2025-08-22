@@ -5,12 +5,7 @@ mod model;
 mod service;
 mod shared;
 use std::{ env };
-
 use crate::shared::state;
-
-
-
-
 
 #[tokio::main]
 async fn main() {
